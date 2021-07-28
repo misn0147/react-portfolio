@@ -7,7 +7,7 @@ function About() {
             {/* <img src={coverImage} className="my-2" style={{ width: "100%" }} alt="cover" /> */}
             <div className="my-2">
                 <p>
-                    I am an aspiring Back End Web Developer holding a Bachelor of Science in Hospitality Management. I recently earned a certificate in Full Stack Development from the University of Texas, where I  developed skills in JavaScript, NoSQL (MongoDB), SQL, and more. An innovative problem-solver passionate about developing apps, my current focus is on mobile-first design and development.
+                    I am a MERN Stack Developer holding a Bachelor of Science in Hospitality Management. I recently earned a certificate in Full Stack Development from the University of Texas, where I  developed skills in JavaScript, NoSQL (MongoDB), SQL, and more. An innovative problem-solver passionate about developing apps, my current focus is on mobile-first design and development.
                 </p>
                 <p>
                     I bring the following to every project:
