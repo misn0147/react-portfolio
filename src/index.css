@@ -357,7 +357,8 @@ body, html {
   background-image: url('../src/assets/austin.jpg');
   background-size: 100%;
   background-position: center;
-  height: 600px;
+  height: 1000px;
+
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
