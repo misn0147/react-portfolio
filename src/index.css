@@ -3,6 +3,7 @@ main {
   max-width: 90%;
   padding: 50px 30px;
 }
+
 :root {
   --primary: #FFFCF7;
   --secondary: #A1B5D8;
@@ -156,7 +157,9 @@ textarea {
 .container {
   display: block;
   width: 85%;
-  max-width: 1200px;
+  margin: 0 auto;
+  max-width: 90%;
+  padding: 50px 30px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -294,6 +297,10 @@ header {
   right: 0px;
   margin-top: 0px;
 }
+.nav-row {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 footer {
   background: #000000;
@@ -358,7 +365,7 @@ body, html {
   background-size: 100%;
   background-position: center;
   height: 1000px;
-
+  width: 100%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -366,4 +373,41 @@ body, html {
   background-attachment: fixed;
   background-position: 80%;
   z-index: 1;
+}
+
+@media screen and (max-width: 575px) {
+  body {
+    font-size: 10px;
+  }
+  main {
+    max-width: 100%;
+    padding: 0;
+  }
+  nav {
+    background-color: red;
+    display: flex;
+    width: auto;
+  }
+
+  .socials {
+    width: auto;
+  }
+
+  .hero {
+    background-repeat: no-repeat;
+  }
+
+  .mx-2 {
+    margin: 0;
+  }
+
+  .img-text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  footer {
+    height: 25px;
+    position: absolute;
+  }
 }

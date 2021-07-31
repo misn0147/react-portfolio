@@ -8,8 +8,8 @@ function Nav(props) {
             <h2>
                 <a href="/">Melissa Natoli</a>
             </h2>
-            <nav>
-                <ul className="flex-row">
+            <nav className="flex-row">
+                <ul className="nav-row">
                     {tabs.map((tab) => (
                         <li className="mx-2" key={tab}>
                             <a
