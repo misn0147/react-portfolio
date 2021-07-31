@@ -1,32 +1,30 @@
 import React from "react";
 
 function Nav(props) {
-    const {
-        contactSelected,
-        setContactSelected
-    } = props;
+    const tabs = ["Home", "About", "Portfolio", "Contact"];
 
     return (
         <header className="flex-row px-1">
             <h2>
-                <a href="/">
-                    Melissa Natoli
-                </a>
+                <a href="/">Melissa Natoli</a>
             </h2>
             <nav>
                 <ul className="flex-row">
-                    <li className={`mx-2 ${!contactSelected && 'navActive'}`}>
-                        <a href="#about" onClick={() => setContactSelected(false)}>About me</a>
-                    </li>
-                    <li className={`mx-2 ${!contactSelected && 'navActive'}`}>
-                        <a href="#projects" onClick={() => setContactSelected(false)}>My Work</a>
-                    </li>
-                    <li className={`mx-2 ${contactSelected && 'navActive'}`}>
-                        <a href="#contact" onClick={() => setContactSelected(true)}>Contact Me</a>
-                    </li>
-                    <li className="mx-2">
-                        <a href="#resume">Resume</a>
-                    </li>
+                    {tabs.map((tab) => (
+                        <li className="mx-2" key={tab}>
+                            <a
+                                href={"#" + tab.toLowerCase()}
+                                onClick={() => props.handlePageChange(tab)}
+                                className={
+                                    props.currentPage === tab
+                                        ? "navActive"
+                                        : "mx-2"
+                                }
+                            >
+                                {tab}
+                            </a>
+                        </li>
+                    ))}
                 </ul>
             </nav>
         </header>

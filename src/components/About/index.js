@@ -3,24 +3,60 @@ import React from "react";
 function About() {
     return (
         <section className="my-5">
-            <h1 id="about">Nice to meet you!</h1>
-            {/* <img src={coverImage} className="my-2" style={{ width: "100%" }} alt="cover" /> */}
-            <div className="my-2">
-                <p>
-                    I am a MERN Stack Developer holding a Bachelor of Science in Hospitality Management. I recently earned a certificate in Full Stack Development from the University of Texas, where I  developed skills in JavaScript, NoSQL (MongoDB), SQL, and more. An innovative problem-solver passionate about developing apps, my current focus is on mobile-first design and development.
-                </p>
-                <p>
-                    I bring the following to every project:
-                </p>
+            <h1 className="titles">
+                About Me
+            </h1>
+            <hr></hr>
+            <div id="container">
+                <div className="img-text-box"> 
+                <img src="../../../melissa_pic.jpeg" alt="Me" className="margin-block my-pic"/>
+                <div className="my-2 margin-block">
+                    <p>
+                        I am a MERN Stack Developer holding a Bachelor of Science in Hospitality Management. I recently earned a certificate in Full Stack Development from the
+                        University of Texas, An innovative problem-solver passionate about developing
+                        apps, my current focus is on mobile-first design and development. 
+                    </p>
+                    <p>What I bring to every project:</p>
+                    <ul>
+                        <li>Problem-solving skills and perseverance</li>
+                        <li>
+                            Dedication to teamwork and flexible collaboration
+                        </li>
+                        <li>
+                            Foundational knowledge of agile software development
+                            principles
+                        </li>
+                        <li>
+                            A curious mind and a desire to attack difficult
+                            challenges
+                        </li>
+                    </ul>
+                    <p>
+                        When I'm not coding, I enjoy travelling the world, playing and watching sports, practicing the ukulele, and spending time with my two little dogs - Toby and Cheesepuff.
+                    </p>
+                </div>
+                </div>
+            </div>
+            <div className="boxes">
+                <h3 className="titles">My Technical Skills</h3>
                 <ul>
-                    <li>Problem-solving skills and perseverance</li>
-                    <li>Dedication to teamwork and flexible collaboration</li>
-                    <li>Foundational knowledge of agile software development principles</li>
-                    <li>A curious mind and a desire to attack difficult challenges</li>
+                    <li>
+                        <u>Programming Languages:</u> HTML, CSS, JavaScript
+                    </li>
+                    <li>
+                        <u>Database Management:</u> MySQL, Sequelize, MongoDB,
+                        Mongoose
+                    </li>
+                    <li>
+                        <u>Libraries/Frameworks:</u> jQuery, React.js,
+                        Express.js, Bootstrap, Materialize
+                    </li>
+                    <li>
+                        <u>Other Technoloiges:</u> Node.js, Passport.js,
+                        Handlebars, Git, Heroku, IndexedDB
+                    </li>
                 </ul>
-                <p>
-                    I’m excited to leverage my skills as part of a fast-paced, quality-driven team. Let’s connect!
-                </p>
+                <a className="resume-button" href="../../../Melissa-Natoli-Resume.docx"><button>Download my Resume</button></a>
             </div>
         </section>
     );
