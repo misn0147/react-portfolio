@@ -7,7 +7,8 @@ function Home() {
         <section class="hero">
             
             <div className="social-line">
-            <h1 className="titles">Austin, Texas based Web Developer</h1>
+            <h1 className="titles"><u>Melissa Natoli</u></h1>
+            <h2 className="titles">Austin, Texas based Web Developer</h2>
                 <div className="socials">
                     <div>
                         <SocialIcon

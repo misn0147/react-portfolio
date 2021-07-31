@@ -1,7 +1,5 @@
 main {
   margin: 0 auto;
-  max-width: 90%;
-  padding: 50px 30px;
 }
 
 :root {
@@ -168,6 +166,8 @@ textarea {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  max-width: 85%;
+  padding: 50px 30px;
 }
 
 .my-pic {
@@ -305,7 +305,7 @@ header {
 footer {
   background: #000000;
   position: fixed;
-  height: 50px;
+  height: 25px;
   bottom: 0px;
   left: 0px;
   right: 0px;
@@ -316,7 +316,7 @@ footer {
 .social-line{
   position: fixed;
   height: 50px;
-  bottom: 45%;
+  bottom: 47%;
   left: 0px;
   right: 0px;
   margin-bottom: 0px;
@@ -344,10 +344,10 @@ hr {
 }
 
 .boxes {
-  padding: 12px 20px;
+  padding: 10px 20px;
   max-width: 50%;
   min-width: 700px;
-  margin: 50px auto 40px;
+  margin: 30px auto 75px;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
 }
 
@@ -399,6 +399,7 @@ body, html {
 
   .mx-2 {
     margin: 0;
+    width: 15%;
   }
 
   .img-text-box {

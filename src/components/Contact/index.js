@@ -42,7 +42,7 @@ function Contact() {
 
     return (
         <section className="my-5">
-            <h1 id="contact" className="titles">
+            <h1 className="titles">
                 Contact Me
             </h1>
             <hr></hr>
