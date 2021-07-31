@@ -87,7 +87,21 @@ function Contact() {
                     </button>
                 </form>
             </div>
-            
+
+            <div className="boxes">
+                <h3 className="titles">Let's talk</h3>
+                <ul>
+                    <li>
+                    <a href="tel:+15125895283">512-589-5283</a>
+                    </li>
+                    <li>
+                    <a href="mailto:missy_natoli@yahoo.com">missy_natoli@yahoo.com</a>
+                    </li>
+                    <li>
+                    <a href="https://github.com/misn0147" target="_blank" rel="noreferrer">GitHub</a> 
+                    </li>
+                </ul>
+            </div>
         </section>
     );
 }

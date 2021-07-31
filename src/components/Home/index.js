@@ -1,12 +1,13 @@
 import React from "react";
 import { SocialIcon } from "react-social-icons";
 
+
 function Home() {
     return (
-        <section className="my-5">
-            <div>Cool image here with my name</div>
-
+        <section class="hero">
+            
             <div className="social-line">
+            <h1 className="titles">Austin, Texas based Web Developer</h1>
                 <div className="socials">
                     <div>
                         <SocialIcon
@@ -14,10 +15,12 @@ function Home() {
                             target="_blank"
                         />
                     </div>
-                    <SocialIcon
+                    <div>
+                        <SocialIcon
                         url="https://github.com/misn0147"
                         target="_blank"
                     />
+                    </div>
                     <div>
                         <SocialIcon
                             url="https://soundcloud.com/user-693992123"

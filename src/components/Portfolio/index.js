@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -10,6 +10,11 @@ SwiperCore.use([Pagination, Navigation]);
 
 function Portfolio() {
     return (
+        <section className="my-5">
+            <h1 className="titles">
+                My Work
+            </h1>
+            <hr></hr>
         <>
             <Swiper
                 slidesPerView={1}
@@ -27,10 +32,12 @@ function Portfolio() {
                         <a
                             href="https://pour-decisions.herokuapp.com/"
                             target="_blank"
+                            rel="noreferrer"
                         >
                             <img
                                 class="card-img-top"
                                 src="../../pour-decisions.PNG"
+                                alt="pour decisions"
                             />
                         </a>
                         <div class="card-body">
@@ -52,10 +59,12 @@ function Portfolio() {
                         <a
                             href="https://misn0147.github.io/meal_match/"
                             target="_blank"
+                            rel="noreferrer"
                         >
                             <img
                                 class="card-img-top"
                                 src="../..//meal_match.JPG"
+                                alt="meal match"
                             />
                         </a>
                         <div class="card-body">
@@ -77,10 +86,12 @@ function Portfolio() {
                         <a
                             href="https://misn0147-my-tech-blog.herokuapp.com/"
                             target="_blank"
+                            rel="noreferrer"
                         >
                             <img
                                 class="card-img-top"
                                 src="../..//my_tech_blog.JPG"
+                                alt="my tech blog"
                             />
                         </a>
                         <div class="card-body">
@@ -102,8 +113,12 @@ function Portfolio() {
                         <a
                             href="https://misn0147-noted.herokuapp.com/"
                             target="_blank"
+                            rel="noreferrer"
                         >
-                            <img class="card-img-top" src="../../Noted.JPG" />
+                            <img class="card-img-top" 
+                            src="../../Noted.JPG" 
+                            alt="noted"
+                            />
                         </a>
                         <div class="card-body">
                             <h5 class="card-title">Noted</h5>
@@ -121,6 +136,7 @@ function Portfolio() {
                 </SwiperSlide>
             </Swiper>
         </>
+        </section>
     );
 }
 
