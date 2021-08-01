@@ -5,7 +5,7 @@ function Nav(props) {
     const tabs = ["Home", "About", "Portfolio", "Contact"];
 
     return (
-        <header className="flex-row px-1">
+        <header className="flex-row">
         <h2>
             <a href="/">Melissa Natoli</a>
         </h2>
