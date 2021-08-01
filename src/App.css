@@ -249,6 +249,16 @@ textarea {
   color: #000000;
 }
 
+.card-title{
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.card-text {
+  font-weight: bold;
+}
+
+
 .img-thumbnail {
   width: auto;
   height: 300px;
@@ -289,12 +299,14 @@ a {
 }
 
 header {
+  box-sizing: border-box;
   background: var(--dark);
-  position: fixed;
+  width: 100%;
   height: 50px;
-  top: 0px;
-  left: 0px;
-  right: 0px;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
   margin-top: 0px;
 }
 .nav-row {
@@ -309,7 +321,7 @@ footer {
   bottom: 0px;
   left: 0px;
   right: 0px;
-  margin-top: 0px;
+  margin-bottom: 0px;
   text-align: center;
 }
 
@@ -374,7 +386,7 @@ body, html {
   background-position: 80%;
   z-index: 1;
 }
-
+/* 
 @media screen and (max-width: 575px) {
   body {
     font-size: 10px;
@@ -389,26 +401,95 @@ body, html {
     width: auto;
   }
 
-  .socials {
-    width: auto;
+
+
+
+  footer {
+    height: 25px;
+    position: absolute;
+  }
+} */
+
+@media screen and (max-width: 575px) {
+  .card {
+    height: 20%;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 
-  .hero {
-    background-repeat: no-repeat;
-  }
-
-  .mx-2 {
+  .my-2 {
     margin: 0;
-    width: 15%;
+    font-size: 10px;
+    line-height: 1;
+    width: 100%;
   }
 
   .img-text-box {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    max-width: 100%;
+    padding: 10px 15px;
   }
+
+  .boxes{
+    max-width: 10%;
+    min-width: 100%;
+    margin: 5px auto 5px;
+    font-size: 10px;
+  }
+
+  ol, ul {
+    padding-left: none;
+  }
+
+  h2 {
+        font-size: 1.5rem;
+    }
+
+  h1 {
+    font-size: 2rem;
+  }
+  nav li {
+    font-size: .75rem;
+  }
+  .nav-row {
+    flex-wrap: nowrap;
+    background-color: #000000;
+    width: 100%;
+  }
+  .flex-row {
+    width: 100%;
+  }
+
+  form, input, textarea {
+    width: 100%;
+  }
+
+  .contacts {
+    font-size: 1rem;
+  }
+
   footer {
     height: 25px;
+    position: fixed;
+    font-size: .75rem;
+  }
+
+  .social-line {
+    width: 100%;
     position: absolute;
   }
+  .socials {
+    width: auto;
+    padding: 8px;
+    background-color: rgba(255,255,255, 0.6);
+  }
+
+  .hero {
+    background-repeat: no-repeat;
+    background-size: 220%;
+    background-position: 65%;
+  }
+
 }
