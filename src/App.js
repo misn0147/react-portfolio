@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import Nav from "./components/Nav";
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Portfolio from "./components/Portfolio";
-import Home from "./components/Home";
-
+import Nav from "../src/components/Nav";
+import About from "../src/components/About";
+import Contact from "../src/components/Contact";
+import Portfolio from "../src/components/Portfolio";
+import Home from "../src/components/Home";
 
 
 function App() {

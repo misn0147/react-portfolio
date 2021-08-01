@@ -5,6 +5,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // import Swiper core and required modules
 import SwiperCore, { Pagination, Navigation } from "swiper/core";
 
+//project photos
+import pourDecisions from "../../assets/pour-decisions.PNG";
+import mealMatch from "../../assets/meal_match.JPG";
+import techBlog from "../../assets/my_tech_blog.JPG";
+import notedPic from "../../assets/Noted.JPG";
+
 // install Swiper modules
 SwiperCore.use([Pagination, Navigation]);
 
@@ -36,7 +42,7 @@ function Portfolio() {
                         >
                             <img
                                 class="card-img-top"
-                                src="../../pour-decisions.PNG"
+                                src={pourDecisions}
                                 alt="pour decisions"
                             />
                         </a>
@@ -63,7 +69,7 @@ function Portfolio() {
                         >
                             <img
                                 class="card-img-top"
-                                src="../..//meal_match.JPG"
+                                src={mealMatch}
                                 alt="meal match"
                             />
                         </a>
@@ -90,7 +96,7 @@ function Portfolio() {
                         >
                             <img
                                 class="card-img-top"
-                                src="../..//my_tech_blog.JPG"
+                                src={techBlog}
                                 alt="my tech blog"
                             />
                         </a>
@@ -116,7 +122,7 @@ function Portfolio() {
                             rel="noreferrer"
                         >
                             <img class="card-img-top" 
-                            src="../../Noted.JPG" 
+                            src={notedPic} 
                             alt="noted"
                             />
                         </a>

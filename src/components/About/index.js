@@ -1,4 +1,6 @@
 import React from "react";
+import myPhoto from "../../assets/melissa_pic.jpeg"
+import myResume from "../../assets/Melissa-Natoli-Resume.docx"
 
 function About() {
     return (
@@ -9,7 +11,7 @@ function About() {
             <hr></hr>
             <div id="container">
                 <div className="img-text-box"> 
-                <img src="../../../melissa_pic.jpeg" alt="Me" className="margin-block my-pic"/>
+                <img src={myPhoto} alt="Me" className="margin-block my-pic"/>
                 <div className="my-2 margin-block">
                     <p>
                         I am a MERN Stack Developer holding a Bachelor of Science in Hospitality Management. I recently earned a certificate in Full Stack Development from the
@@ -56,7 +58,7 @@ function About() {
                         Handlebars, Git, Heroku, IndexedDB
                     </li>
                 </ul>
-                <a className="resume-button" href="../../../Melissa-Natoli-Resume.docx"><button>Download my Resume</button></a>
+                <a className="resume-button" href={myResume}><button>Download my Resume</button></a>
             </div>
         </section>
     );
