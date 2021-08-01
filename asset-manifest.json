@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.b43b7c7c.chunk.css",
+    "main.js": "/react-portfolio/static/js/main.92213f7d.chunk.js",
+    "main.js.map": "/react-portfolio/static/js/main.92213f7d.chunk.js.map",
+    "runtime-main.js": "/react-portfolio/static/js/runtime-main.872b2f22.js",
+    "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.872b2f22.js.map",
+    "static/js/2.5409c287.chunk.js": "/react-portfolio/static/js/2.5409c287.chunk.js",
+    "static/js/2.5409c287.chunk.js.map": "/react-portfolio/static/js/2.5409c287.chunk.js.map",
+    "index.html": "/react-portfolio/index.html",
+    "static/css/main.b43b7c7c.chunk.css.map": "/react-portfolio/static/css/main.b43b7c7c.chunk.css.map",
+    "static/js/2.5409c287.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.5409c287.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/react-portfolio/static/media/austin.67082d5f.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.872b2f22.js",
+    "static/js/2.5409c287.chunk.js",
+    "static/css/main.b43b7c7c.chunk.css",
+    "static/js/main.92213f7d.chunk.js"
+  ]
+}
