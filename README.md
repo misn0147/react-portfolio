@@ -3,7 +3,7 @@
 
 This is my portfolio which was made using React.
 
-Deployed Application: 
+Deployed Application: https://misn0147.github.io/react-portfolio/
 
 ## Table of Contents
 * [User Story](#User-Story)
