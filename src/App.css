@@ -36,12 +36,7 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 500;
   margin: 5px 0;
@@ -240,13 +235,14 @@ textarea {
 }
 
 .card {
-  height: 10%;
-  margin-left: 200px;
-  margin-right: 200px
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
 }
 
 .card-body {
-  color: #000000;
+  color: hsl(0, 0%, 0%);
 }
 
 .card-title{
@@ -387,6 +383,24 @@ body, html {
   z-index: 1;
 }
 
+@media screen and (max-width: 768px) {
+  .hero {
+    background-size: cover;
+  }
+
+  .img-text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: 0 10% 3%;
+    padding: 0 5%;
+  }
+
+  .card {
+    width: 80%;
+  }
+}
 
 @media screen and (max-width: 1024px) {
   .hero {
@@ -404,10 +418,6 @@ body, html {
       padding: 0 5%;
   }
 
-  .my-pic {
-    margin: 0 15% 3%;
-  }
-
   .img-text-box {
     display: flex;
     flex-direction: column;
@@ -415,41 +425,11 @@ body, html {
     max-width: 100%;
     padding: 0 5%;
   }
-
-  .card {
-    height: 50%;
-    margin-left: 7%;
-    margin-right: 7%;
-  }
 }
 
-@media screen and (max-width: 768px) {
-  .hero {
-    background-size: cover;
-  }
 
-  .img-text-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    max-width: 100%;
-    margin: 0 10% 3%;
-    padding: 0 5%;
-  }
-
-  .card {
-    height: 30%;
-    margin-left: 7%;
-    margin-right: 7%;
-  }
-}
 
 @media screen and (max-width: 740px) {
-  .card {
-    height: 20%;
-    margin-left: 5%;
-    margin-right: 5%;
-  }
 
   .my-2 {
     margin: 0;
@@ -458,18 +438,24 @@ body, html {
     width: 100%;
   }
 
+  .my-pic {
+    max-width: 100%;
+    margin: 0;
+  }
+
   .img-text-box {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     max-width: 100%;
-    padding: 10px 15px;
+    margin: 0;
+    padding: 0;
   }
 
   .boxes{
     max-width: 10%;
     min-width: 100%;
-    margin: 5px auto 5px;
+    margin: 5px auto 20px;
     font-size: 10px;
   }
 
@@ -487,10 +473,12 @@ body, html {
   nav li {
     font-size: .75rem;
   }
+
   .nav-row {
     flex-wrap: nowrap;
     background-color: #000000;
     width: 100%;
+    padding-left: 0;
   }
   .flex-row {
     width: 100%;
@@ -506,7 +494,7 @@ body, html {
 
   footer {
     height: 25px;
-    position: fixed;
+    position: relative;
     font-size: .75rem;
   }
 
@@ -531,4 +519,6 @@ body, html {
     padding-left: 0;
   }
 }
+
+
 

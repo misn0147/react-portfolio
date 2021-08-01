@@ -4,7 +4,7 @@ import { SocialIcon } from "react-social-icons";
 
 function Home() {
     return (
-        <section class="hero">
+        <section className="hero">
             
             <div className="social-line">
             <h1 className="titles"><u>Melissa Natoli</u></h1>
