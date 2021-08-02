@@ -119,7 +119,7 @@ input:focus {
 }
 
 li {
-  list-style: none;
+  list-style: circle;
 }
 
 
@@ -195,6 +195,7 @@ textarea {
 }
 
 .mx-2 {
+  list-style: none;
   margin-right: var(--spacing-two);
   margin-left: var(--spacing-two);
 }
@@ -355,7 +356,6 @@ hr {
   padding: 10px 20px;
   max-width: 50%;
   min-width: 700px;
-  margin: 30px auto 75px;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
 }
 
@@ -368,10 +368,10 @@ body, html {
   height: 100%;
 }
 
+
 .hero {
   background-image: url('../src/assets/austin.jpg');
-  background-size: 100%;
-  background-position: center;
+  background-repeat: no-repeat;
   height: 1000px;
   width: 100%;
   display: flex;
@@ -379,40 +379,23 @@ body, html {
   flex-wrap: wrap;
   align-items: flex-start;
   background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   background-position: 80%;
-  z-index: 1;
+  z-index: 9999;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 980px) {
   .hero {
     background-size: cover;
-  }
-
-  .img-text-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    max-width: 100%;
-    margin: 0 10% 3%;
-    padding: 0 5%;
-  }
-
-  .card {
-    width: 80%;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .hero {
-    background-size: 200%;
-    background-position: center;
+    background-image: url('../src/assets/austin-small.JPG');
     height: 1400px;
   }
 
   .margin-block {
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
       max-width: 100%;
       margin: 0 3% 3%;
       padding: 0 5%;
@@ -425,11 +408,53 @@ body, html {
     max-width: 100%;
     padding: 0 5%;
   }
+
+  .boxes {
+    margin: 30px auto auto;
+  }
+
+  .my-pic {
+    width: 40%;
+    height: 40%;
+  }
+  .img-box {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .card {
+    width: 80%;
+  }
+
+  .nav-row {
+    flex-wrap: nowrap;
+    background-color: #000000;
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .flex-row {
+    width: 100%;
+  }
+
+  .boxes{
+    max-width: 10%;
+    min-width: 80%;
+    margin: 5px auto auto;
+    font-size: .8rem;
+  }
+
+  form, input, textarea {
+    width: 100%;
+  }
+  
 }
 
 
-
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 575px) {
 
   .my-2 {
     margin: 0;
@@ -444,19 +469,7 @@ body, html {
   }
 
   .img-text-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    max-width: 100%;
     margin: 0;
-    padding: 0;
-  }
-
-  .boxes{
-    max-width: 10%;
-    min-width: 100%;
-    margin: 5px auto 20px;
-    font-size: 10px;
   }
 
   ol, ul {
@@ -474,19 +487,7 @@ body, html {
     font-size: .75rem;
   }
 
-  .nav-row {
-    flex-wrap: nowrap;
-    background-color: #000000;
-    width: 100%;
-    padding-left: 0;
-  }
-  .flex-row {
-    width: 100%;
-  }
 
-  form, input, textarea {
-    width: 100%;
-  }
 
   .contacts {
     font-size: 1rem;
