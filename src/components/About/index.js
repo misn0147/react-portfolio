@@ -10,9 +10,9 @@ function About() {
             </h1>
             <hr></hr>
             <div id="container">
-                <div className="img-text-box"> 
-                <div className="img-box"><img src={myPhoto} alt="Me" className="margin-block my-pic"/></div>
-                <div className="my-2 margin-block">
+                <div className="img-text-box col"> 
+                <div className="img-box col-lg-4"><img src={myPhoto} alt="Me" className="margin-block my-pic"/></div>
+                <div className="my-2 margin-block col-lg-8">
                     <p>
                         I am a MERN Stack Developer holding a Bachelor of Science in Hospitality Management from Texas Tech University. I recently earned a certificate in Full Stack Development from the University of Texas. An innovative problem-solver passionate about developing apps, my current focus is on mobile-first design and development. 
                     </p>

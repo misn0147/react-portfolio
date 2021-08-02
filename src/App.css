@@ -100,13 +100,13 @@ span[role='img'] {
 }
 
 form {
-  width: 40%;
+  width: 100%;
 }
 
 input {
   font-size: 1rem;
   padding: 0.25rem;
-  width: 600px;
+  width: 100%;
   border: 1px solid var(--dark);
   outline: none;
   border-radius: 3px;
@@ -141,8 +141,7 @@ nav li {
 }
 
 textarea {
-  width: 600px;
-  height: 120px;
+  width: 100%;
   border: 3px solid #cccccc;
   padding: 5px;
 }
@@ -313,7 +312,6 @@ header {
 
 footer {
   background: #000000;
-  position: fixed;
   height: 25px;
   bottom: 0px;
   left: 0px;
@@ -353,9 +351,9 @@ hr {
 }
 
 .boxes {
+  margin: 30px auto auto;
   padding: 10px 20px;
   max-width: 50%;
-  min-width: 700px;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
 }
 
@@ -368,6 +366,10 @@ body, html {
   height: 100%;
 }
 
+.img-box {
+  display: flex;
+  justify-content: center;
+}
 
 .hero {
   background-image: url('../src/assets/austin.jpg');
@@ -409,10 +411,6 @@ body, html {
     padding: 0 5%;
   }
 
-  .boxes {
-    margin: 30px auto auto;
-  }
-
   .my-pic {
     width: 40%;
     height: 40%;
@@ -447,10 +445,6 @@ body, html {
     font-size: .8rem;
   }
 
-  form, input, textarea {
-    width: 100%;
-  }
-  
 }
 
 
@@ -495,8 +489,9 @@ body, html {
 
   footer {
     height: 25px;
-    position: relative;
+    position: absolute;
     font-size: .75rem;
+    z-index: 999;
   }
 
   .social-line {

@@ -10,6 +10,8 @@ import pourDecisions from "../../assets/pour-decisions.PNG";
 import mealMatch from "../../assets/meal_match.JPG";
 import techBlog from "../../assets/my_tech_blog.JPG";
 import notedPic from "../../assets/Noted.JPG";
+import weatherApp from "../../assets/weather_dash.JPG";
+import workdayPic from "../../assets/workday_scheduler.JPG";
 
 // install Swiper modules
 SwiperCore.use([Pagination, Navigation]);
@@ -49,7 +51,7 @@ function Portfolio() {
                         <div class="card-body">
                             <h5 class="card-title">Pour Decisions</h5>
                             <p class="card-text">
-                                Bootcamp group project created using Node.js, Express.js, Handlebars.js, MySQL2, and Sequelize as a review website for wineries in the Texas Hill Country
+                                Bootcamp group project created using Node.js, Express.js, Handlebars.js, MySQL2, and Sequelize as a review website for wineries in the Texas Hill Country.
                             </p>
                             <a
                                 href="https://github.com/misn0147/pour-decisions"
@@ -103,7 +105,7 @@ function Portfolio() {
                         <div class="card-body">
                             <h5 class="card-title">My.Tech.Blog</h5>
                             <p class="card-text">
-                                Blog website for users to blog about tech topics created using Express.js, Handlebars.jsn MySQL2, and Sequelize. Users can interact with the blog poster through comments on the blog
+                                Blog website for users to blog about tech topics created using Express.js, Handlebars.jsn MySQL2, and Sequelize. Users can interact with the blog poster through comments on the blog.
                             </p>
                             <a
                                 href="https://github.com/misn0147/my-tech-blog"
@@ -133,6 +135,58 @@ function Portfolio() {
                             </p>
                             <a
                                 href="https://github.com/misn0147/noted"
+                                class="btn btn-secondary btn-sm"
+                            >
+                                GitHub Repo
+                            </a>
+                        </div>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div class="card mb-3">
+                        <a
+                            href="https://misn0147.github.io/weather-dashboard/"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            <img class="card-img-top" 
+                            src={weatherApp} 
+                            alt="Weather Dashboard"
+                            />
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Weather Dashboard</h5>
+                            <p class="card-text">
+                                Weather application that uses OpenWeather API to display current weather and upcoming forecast for any city searched. 
+                            </p>
+                            <a
+                                href="https://github.com/misn0147/weather-dashboard"
+                                class="btn btn-secondary btn-sm"
+                            >
+                                GitHub Repo
+                            </a>
+                        </div>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div class="card mb-3">
+                        <a
+                            href="https://misn0147.github.io/work-day-scheduler/"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            <img class="card-img-top" 
+                            src={workdayPic} 
+                            alt="Workday Scheduler"
+                            />
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Workday Scheduler</h5>
+                            <p class="card-text">
+                                Calendar application where you can log daily tasks and save them. The color of the task changes as the workday progresses. 
+                            </p>
+                            <a
+                                href="https://github.com/misn0147/work-day-scheduler"
                                 class="btn btn-secondary btn-sm"
                             >
                                 GitHub Repo
