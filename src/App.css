@@ -489,7 +489,6 @@ body, html {
 
   footer {
     height: 25px;
-    position: absolute;
     font-size: .75rem;
     z-index: 999;
   }
