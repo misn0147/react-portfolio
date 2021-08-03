@@ -4,6 +4,7 @@ import About from "../src/components/About";
 import Contact from "../src/components/Contact";
 import Portfolio from "../src/components/Portfolio";
 import Home from "../src/components/Home";
+import Footer from '../src/components/Footer';
 
 
 function App() {
@@ -25,18 +26,14 @@ function App() {
     return (
         <div>
             <main>
-                <header>
                 <Nav
                     currentPage={currentPage}
                     handlePageChange={handlePageChange}
                 />
-                </header>
 
                 <div>{renderPage(currentPage)}</div>
 
-            <footer>
-                Melissa Natoli's React Portfolio © 2021
-            </footer>
+                <Footer></Footer>
             </main>
         </div>
     );

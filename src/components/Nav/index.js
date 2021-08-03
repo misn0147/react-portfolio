@@ -14,7 +14,7 @@ function Nav(props) {
                 {tabs.map((tab) => (
                     <li className="mx-2" key={tab}>
                         <a
-                            href={"#" + tab.toLowerCase()}
+                            href={'#' + tab.toLowerCase()}
                             onClick={() => props.handlePageChange(tab)}
                             className={
                                 props.currentPage === tab
