@@ -51,7 +51,12 @@ function Portfolio() {
                         <div className="card-body">
                             <h5 className="card-title">Pour Decisions</h5>
                             <p className="card-text">
-                                Bootcamp group project created using Node.js, Express.js, Handlebars.js, MySQL2, and Sequelize as a review website for wineries in the Texas Hill Country.
+                                Bootcamp group project created as a review website for wineries in the Texas Hill Country.
+                                <br></br>
+                                <u>Technologies Used</u>
+                                <li>
+                                Node.js, Express.js, Handlebars.js, MySQL2, and Sequelize
+                                </li>
                             </p>
                             <a
                                 href="https://github.com/misn0147/pour-decisions"
@@ -79,6 +84,11 @@ function Portfolio() {
                             <h5 className="card-title">Meal Match♥</h5>
                             <p className="card-text">
                                 Bootcamp group project created using JavaScript to randomly choose a food and drink pairing to help you have a fun and exciting date night.
+                                <br></br>
+                                <u>Technologies Used</u>
+                                <li>
+                                HTML, JavaScript, Materialize
+                                </li>
                             </p>
                             <a
                                 href="https://github.com/misn0147/meal_match"
@@ -106,6 +116,11 @@ function Portfolio() {
                             <h5 className="card-title">My.Tech.Blog</h5>
                             <p className="card-text">
                                 Blog website for users to blog about tech topics created using Express.js, Handlebars.jsn MySQL2, and Sequelize. Users can interact with the blog poster through comments on the blog.
+                                <br></br>
+                                <u>Technologies Used</u>
+                                <li>
+                                JavaScript, Express.js, bcrypt, MySQL, Sequelize
+                                </li>
                             </p>
                             <a
                                 href="https://github.com/misn0147/my-tech-blog"
@@ -132,6 +147,11 @@ function Portfolio() {
                             <h5 className="card-title">Noted</h5>
                             <p className="card-text">
                                 Simple note taking application created using Express.
+                                <br></br>
+                                <u>Technologies Used</u>
+                                <li>
+                                Express.js, Uuid, JavaScript
+                                </li>
                             </p>
                             <a
                                 href="https://github.com/misn0147/noted"
@@ -158,6 +178,11 @@ function Portfolio() {
                             <h5 className="card-title">Weather Dashboard</h5>
                             <p className="card-text">
                                 Weather application that uses OpenWeather API to display current weather and upcoming forecast for any city searched. 
+                                <br></br>
+                                <u>Technologies Used</u>
+                                <li>
+                                JavaScript, OpenWeatherMap API, Bootstrap
+                                </li>
                             </p>
                             <a
                                 href="https://github.com/misn0147/weather-dashboard"
@@ -184,6 +209,11 @@ function Portfolio() {
                             <h5 className="card-title">Workday Scheduler</h5>
                             <p className="card-text">
                                 Calendar application where you can log daily tasks and save them. The color of the task changes as the workday progresses. 
+                                <br></br>
+                                <u>Technologies Used</u>
+                                <li>
+                                JavaScript, Moment.js
+                                </li>
                             </p>
                             <a
                                 href="https://github.com/misn0147/work-day-scheduler"

@@ -52,8 +52,8 @@ function About() {
                         Express.js, Bootstrap, Materialize
                     </li>
                     <li>
-                        <u>Other Technoloiges:</u> Node.js, Passport.js,
-                        Handlebars, Git, Heroku, IndexedDB
+                        <u>Other Technologies:</u> Node.js, Passport.js,
+                        Handlebars, Git, Bash, Heroku, IndexedDB
                     </li>
                 </ul>
                 <a className="resume-button" href={myResume}><button>Download my Resume</button></a>
