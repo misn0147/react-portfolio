@@ -6,7 +6,7 @@ function Footer() {
             <div className="socials">
                 <div>
                     <SocialIcon
-                        url="https://www.linkedin.com/in/melissa-natoli-4807b63a/"
+                        url="https://www.linkedin.com/in/melissa-natoli/"
                         target="_blank"
                     />
                 </div>
