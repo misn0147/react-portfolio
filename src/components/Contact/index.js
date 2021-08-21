@@ -1,50 +1,41 @@
-import React, { useState } from "react";
+import React, { useState} from "react";
+import emailjs from "emailjs-com";
 
-import { validateEmail } from "../../utils/helpers";
+export default function Contact() {
 
-function Contact() {
-    const [formState, setFormState] = useState({
+    const [errorMessage] = useState("");
+    const [toSend, setToSend] = useState({
         name: "",
-        email: "",
         message: "",
+        email: "",
     });
 
-    const [errorMessage, setErrorMessage] = useState("");
-    const { name, email, message } = formState;
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        if (!errorMessage) {
-            console.log("Submit Form", formState);
-        }
-    };
-
     const handleChange = (e) => {
-        if (e.target.name === "email") {
-            const isValid = validateEmail(e.target.value);
-            if (!isValid) {
-                setErrorMessage("Your email is invalid.");
-            } else {
-                setErrorMessage("");
-            }
-        } else {
-            if (!e.target.value.length) {
-                setErrorMessage(`Please enter your ${e.target.name}.`);
-            } else {
-                setErrorMessage("");
-            }
-        }
-        if (!errorMessage) {
-            setFormState({ ...formState, [e.target.name]: e.target.value });
-            console.log("Handle Form", formState);
-        }
+        setToSend({ ...toSend, [e.target.name]: e.target.value });
     };
+    function handleSubmit(e) {
+        e.preventDefault();
+        alert("Thank you for your message! I will reach out to you soon.");
+        emailjs
+            .sendForm(
+                "service_7kejx8j",
+                "template_7hrbeka",
+                e.target,
+                "user_gSnY6uiZP9W6zw0KcU30O"
+            )
+            .then(
+                (result) => {
+                    console.log(result.text);
+                },
+                (error) => {
+                    console.log(error.text);
+                }
+            );
+    }
 
     return (
         <section className="my-5">
-            <h1 className="titles">
-                Contact Me
-            </h1>
+            <h1 className="titles">Contact Me</h1>
             <hr></hr>
             <div className="boxes">
                 <form id="contact-form" onSubmit={handleSubmit}>
@@ -54,8 +45,8 @@ function Contact() {
                             type="text"
                             name="name"
                             placeholder="John Smith"
-                            defaultValue={name}
-                            onBlur={handleChange}
+                            value={toSend.name}
+                            onChange={handleChange}
                         />
                     </div>
                     <div>
@@ -64,8 +55,8 @@ function Contact() {
                             type="email"
                             name="email"
                             placeholder="john.smith@gmail.com"
-                            defaultValue={email}
-                            onBlur={handleChange}
+                            value={toSend.email}
+                            onChange={handleChange}
                         />
                     </div>
                     <div>
@@ -73,8 +64,8 @@ function Contact() {
                         <textarea
                             name="message"
                             rows="5"
-                            defaultValue={message}
-                            onBlur={handleChange}
+                            value={toSend.message}
+                            onChange={handleChange}
                         />
                     </div>
                     {errorMessage && (
@@ -82,7 +73,7 @@ function Contact() {
                             <p className="error-text">{errorMessage}</p>
                         </div>
                     )}
-                    <button data-testid="button" type="submit">
+                    <button value="Send" data-testid="button" type="submit">
                         Submit
                     </button>
                 </form>
@@ -92,18 +83,30 @@ function Contact() {
                 <h3 className="titles">Let's talk</h3>
                 <ul>
                     <li>
-                    <a className="contacts" href="tel:+15125895283">512-589-5283</a>
+                        <a className="contacts" href="tel:+15125895283">
+                            512-589-5283
+                        </a>
                     </li>
                     <li>
-                    <a className="contacts" href="mailto:missy_natoli@yahoo.com">missy_natoli@yahoo.com</a>
+                        <a
+                            className="contacts"
+                            href="mailto:missy_natoli@yahoo.com"
+                        >
+                            missy_natoli@yahoo.com
+                        </a>
                     </li>
                     <li>
-                    <a className="contacts" href="https://github.com/misn0147" target="_blank" rel="noreferrer">GitHub</a> 
+                        <a
+                            className="contacts"
+                            href="https://github.com/misn0147"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            GitHub
+                        </a>
                     </li>
                 </ul>
             </div>
         </section>
     );
 }
-
-export default Contact;
