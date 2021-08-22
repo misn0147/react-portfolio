@@ -14,11 +14,11 @@ function About() {
                 <div className="img-box col-lg-4"><img src={myPhoto} alt="Me" className="margin-block my-pic"/></div>
                 <div className="my-2 margin-block col-lg-8">
                     <p>
-                        I am a MERN Stack Developer holding a Bachelor of Science in Hospitality Management from Texas Tech University. I recently earned a certificate in Full Stack Development from the University of Texas. An innovative problem-solver passionate about developing apps, my current focus is on mobile-first design and development. 
+                        I am a MERN Stack Developer holding a Bachelor of Science in Hospitality Management from Texas Tech University. I recently earned a certificate in Full Stack Development from the University of Texas. Skilled at writing well-designed, testable, and efficient code using current best practices in Web development. 
                     </p>
                     <p>What I bring to every project:</p>
                     <ul className="bullets">
-                        <li>Problem-solving skills and perseverance</li>
+                        <li>Problem-solving skills and perseverance with the ability to learn new concepts quickly</li>
                         <li>
                             Dedication to teamwork and flexible collaboration
                         </li>

@@ -115,11 +115,11 @@ function Portfolio() {
                         <div className="card-body">
                             <h5 className="card-title">My.Tech.Blog</h5>
                             <p className="card-text">
-                                Blog website for users to blog about tech topics created using Express.js, Handlebars.jsn MySQL2, and Sequelize. Users can interact with the blog poster through comments on the blog.
+                                Blog website for users to blog about tech topics. Users can interact with the blog poster through comments on the blog.
                                 <br></br>
                                 <u>Technologies Used</u>
                                 <li>
-                                JavaScript, Express.js, bcrypt, MySQL, Sequelize
+                                JavaScript, Express.js, Handlebars.js, bcrypt, MySQL, Sequelize
                                 </li>
                             </p>
                             <a
@@ -146,7 +146,7 @@ function Portfolio() {
                         <div className="card-body">
                             <h5 className="card-title">Noted</h5>
                             <p className="card-text">
-                                Simple note taking application created using Express.
+                                Note taking application created using Express.
                                 <br></br>
                                 <u>Technologies Used</u>
                                 <li>
@@ -177,7 +177,7 @@ function Portfolio() {
                         <div className="card-body">
                             <h5 className="card-title">Weather Dashboard</h5>
                             <p className="card-text">
-                                Weather application that uses OpenWeather API to display current weather and upcoming forecast for any city searched. 
+                                Desktop weather application that uses OpenWeather API to display current weather and upcoming forecast for any city searched. 
                                 <br></br>
                                 <u>Technologies Used</u>
                                 <li>
@@ -208,7 +208,7 @@ function Portfolio() {
                         <div className="card-body">
                             <h5 className="card-title">Workday Scheduler</h5>
                             <p className="card-text">
-                                Calendar application where you can log daily tasks and save them. The color of the task changes as the workday progresses. 
+                                Calendar application where user can log daily tasks and save them. The color of the task changes as the workday progresses. 
                                 <br></br>
                                 <u>Technologies Used</u>
                                 <li>
