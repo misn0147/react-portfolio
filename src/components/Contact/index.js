@@ -90,9 +90,9 @@ export default function Contact() {
                     <li>
                         <a
                             className="contacts"
-                            href="mailto:missy_natoli@yahoo.com"
+                            href="mailto:natoli.missy@gmail.com"
                         >
-                            missy_natoli@yahoo.com
+                            natoli.missy@gmail.com
                         </a>
                     </li>
                     <li>
