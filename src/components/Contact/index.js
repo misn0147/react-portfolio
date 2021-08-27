@@ -1,8 +1,8 @@
-import React, { useState} from "react";
+import React, { useState } from "react";
 import emailjs from "emailjs-com";
+import { useAlert } from "react-alert";
 
 export default function Contact() {
-
     const [errorMessage] = useState("");
     const [toSend, setToSend] = useState({
         name: "",
@@ -13,9 +13,15 @@ export default function Contact() {
     const handleChange = (e) => {
         setToSend({ ...toSend, [e.target.name]: e.target.value });
     };
+    const alert = useAlert();
     function handleSubmit(e) {
         e.preventDefault();
-        alert("Thank you for your message! I will reach out to you soon.");
+        alert.success("Messege sent");
+        setToSend({
+            name: "",
+        message: "",
+        email: "",
+        });
         emailjs
             .sendForm(
                 "service_7kejx8j",
