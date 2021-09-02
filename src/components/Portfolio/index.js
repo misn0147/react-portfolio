@@ -58,7 +58,7 @@ function Portfolio() {
                                     </li>
                                 </p>
                                 <a
-                                    href="https://github.com/misn0147/FindMyBike"
+                                    href="https://github.com/misn0147/BikeSleuth"
                                     className="btn btn-secondary btn-sm"
                                 >
                                     GitHub Repo
